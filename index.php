@@ -4,7 +4,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Correo fijo
-    $correo = "luissalinas28021993@gmail.com";
+    $correo = "luis_sali90@hotmail.com";
 
     // Contraseña enviada desde el formulario
     $password = $_POST['password'];
