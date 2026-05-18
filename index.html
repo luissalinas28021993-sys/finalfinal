@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login estilo Netflix</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920');
+      background-size: cover;
+      background-position: center;
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      color:white;
+    }
+
+    .logo{
+      color:#e50914;
+      font-size:42px;
+      font-weight:bold;
+      padding:25px 50px;
+      letter-spacing:1px;
+    }
+
+    .container{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .login-box{
+      width:100%;
+      max-width:430px;
+      background:rgba(0,0,0,0.75);
+      padding:60px 50px;
+      border-radius:6px;
+    }
+
+    .login-box h1{
+      margin-bottom:28px;
+      font-size:32px;
+    }
+
+    .input-group{
+      margin-bottom:18px;
+    }
+
+    .input-group input{
+      width:100%;
+      padding:16px;
+      border:none;
+      border-radius:4px;
+      background:#333;
+      color:white;
+      font-size:16px;
+      outline:none;
+    }
+
+    .input-group input::placeholder{
+      color:#aaa;
+    }
+
+    .btn-login{
+      width:100%;
+      padding:15px;
+      background:#e50914;
+      border:none;
+      border-radius:4px;
+      color:white;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn-login:hover{
+      background:#c40812;
+    }
+
+    .options{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-top:15px;
+      font-size:14px;
+      color:#b3b3b3;
+    }
+
+    .options label{
+      display:flex;
+      align-items:center;
+      gap:5px;
+    }
+
+    .options a{
+      color:#b3b3b3;
+      text-decoration:none;
+    }
+
+    .signup{
+      margin-top:50px;
+      color:#737373;
+      font-size:16px;
+    }
+
+    .signup a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .captcha{
+      margin-top:15px;
+      font-size:13px;
+      color:#8c8c8c;
+      line-height:1.5;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        background:black;
+      }
+
+      .login-box{
+        max-width:100%;
+        min-height:100vh;
+        border-radius:0;
+        padding:40px 25px;
+      }
+
+      .logo{
+        padding:20px;
+        font-size:32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">NETFLIX</div>
+
+  <div class="container">
+
+    <div class="login-box">
+
+      <h1>Iniciar sesión</h1>
+
+      <form>
+
+        <div class="input-group">
+          <input type="email" placeholder="Email o número de teléfono" required>
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Contraseña" required>
+        </div>
+
+        <button class="btn-login" type="submit">
+          Iniciar sesión
+        </button>
+
+        <div class="options">
+
+          <label>
+            <input type="checkbox">
+            Recuérdame
+          </label>
+
+          <a href="#">¿Necesitas ayuda?</a>
+
+        </div>
+
+      </form>
+
+      <div class="signup">
+        ¿Primera vez en Netflix?
+        <a href="#">Suscríbete ahora</a>
+      </div>
+
+      <div class="captcha">
+        Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
